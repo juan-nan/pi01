@@ -1,15 +1,10 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
- 
-
 
 int main() {
 int l=1000;
 int c=1000;
 int **matriz = (int **)malloc(l * sizeof(int *));
-
 
 if (matriz == NULL) {
   printf("Erro alocacao\n");
@@ -40,8 +35,6 @@ for (int j = 0; j < l; j++) {
        free(matriz[j]);
      }
 free(matriz);
-
-
 
 return 0;
 }
